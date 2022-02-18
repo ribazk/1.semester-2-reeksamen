@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ribaz Khalaf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/53be8b6e85.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="img/logo.png" 
+        alt="dette er et logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-windows-close" onclick="hideMenu()"></i>   
+          <ul>
+            <li><a href="#">HOME</a> </li>
+            <li><a href="#aboutme">ABOUT ME</a> </li>
+            <li><a href="#portfolio">PORTFOLIO</a> </li>
+            <li><a href="#contact">CONTACT</a> </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h2>Hello, I am Ribaz 
+          and <br>I love to combine music and content.</h2>
+        <p>I study Multimedia Design at University College Of Lillebealt in Odense and this is my porfolio.
+        </p>
+        <a href="#portfolio" class="hero-btn">Visit my portfolio to se more</a>
+      </div>
+    </section>
+    <section class="aboutme" id="aboutme">
+      <h2>About Me</h2>
+      <p>Hello, my name is Ribaz Khalaf, i am 25 years old and i am passionate about content creation and music. I live in Odense, wich is a city with a lot of possibilitys for a creative and passionate student like me. I belive that the small details make the big difference, especially when I can combine content with music. I have experince in the adobe package, <br>After Effects, Photoshop, illustrator, Adobe XD some experince bulding websites thru HTML, css and Wordpress. Other than that I have a lot experince <br>as a DJ, where I have played over 400 DJ jobs thru the last 11 years.  
+      <div class="row">
+      </div>
+    </section>
+    <h2>Portfolio</h2> 
+    <div class="row" id="portfolio">
+      <div class="column">
+        <a href="https://ribazkhalaf.com/assets/member.mp4" style="width:94%">
+          <img src="img/member.png" alt="member">
+        </a>    
+      </div>
+      <div class="column">
+        <a href="https://ribazkhalaf.com/assets/Pitchers.mp4" style="width:99%">
+          <img src="img/pitcher.png" alt="pitcher">
+        </a>
+      </div>
+      <div class="column">
+        <a href="https://ribazkhalaf.com/assets/storm.mp4" style="width:98%">
+          <img src="img/storm.png" alt="storm">
+        </a>
+      </div>
+    </div>
+    <div class="row" id="portfolio1">
+      <div class="column">
+        <img src="img/dj1.jpg" alt="dj1" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img/dj2.jpg" alt="dj2" style="width:100%"> 
+      </div>
+      <div class="column">
+        <img src="img/dj3.jpg" alt="dj3" style="width:100%">
+      </div>
+    </div>
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="hero">
+        <form>
+          <div class="input-group">
+            <input type="text" id="name" required>
+            <label for="name">Your Name</label>
+          </div>
+          <div class="input-group">
+            <input type="text" id="number" required>
+            <label for="number">Phone Number</label>
+          </div>
+            <div class="input-group">
+              <input type="email" id="email" required>
+              <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+              <textarea id="message" rows="8"></textarea>
+              <label for="name">Your Message</label>
+            </div>
+            <button class="button-submit" type="submit">submit</button>
+          </form>
+        </div>
+      </section>      
+      <div class="footer">
+        <p>Copyright &copy; 2022 Ribaz Khalaf</p>
+        <a href="https://www.facebook.com/Ribazkhalaf" class="fa fa-facebook"></a>   
+        <a href="https://www.linkedin.com/in/ribaz-khalaf-98b8b7117/" class="fa fa-linkedin"></a>  
+        <a href="https://www.instagram.com/ribazkhalaf/" class="fa fa-instagram"></a>      
+      </div>     
+     <script>
+       var navLinks = document.getElementById("navLinks");
+       function showMenu(){ navLinks.style.right = "0"; }
+       function hideMenu(){ navLinks.style.right = "-200px"; }
+    </script>    
+  </body>
+</html>
